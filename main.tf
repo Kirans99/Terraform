@@ -13,3 +13,10 @@ resource "aws_s3_bucket" "b2" {
         Name = "my-kkrbuckt"
     }
 }
+
+resource "aws_vpc" "main" {
+  cidr_block = "10.0.0.0/28"
+        tags = {
+            Name = "aws-vpc01"
+        }
+}
