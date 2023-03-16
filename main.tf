@@ -20,3 +20,10 @@ resource "aws_vpc" "main" {
             Name = "aws-vpc01"
         }
 }
+
+
+provider "aws" {
+    access_key = ""
+    secret_key = ""
+    region = "ap-south-1"
+}
